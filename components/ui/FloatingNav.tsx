@@ -1,6 +1,12 @@
 "use client";
 import React, { useState } from "react";
-import { AnimatePresence, motion, useMotionValueEvent, useScroll } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  useScroll,
+  useMotionValueEvent,
+} from "framer-motion";
+import Link from "next/link";
 import { cn } from "@/utils/cn";
 
 export const FloatingNav = ({
@@ -15,14 +21,18 @@ export const FloatingNav = ({
   className?: string;
 }) => {
   const { scrollYProgress } = useScroll();
-  const [visible, setVisible] = useState(false);
+
+  // set true for the initial state so that nav bar is visible in the hero section
+  const [visible, setVisible] = useState(true);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
+    // Check if current is not undefined and is a number
     if (typeof current === "number") {
-      const direction = current - scrollYProgress.getPrevious()!;
+      let direction = current! - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() < 0.05) {
-        setVisible(false);
+        // also set true for the initial state
+        setVisible(true);
       } else {
         if (direction < 0) {
           setVisible(true);
@@ -48,27 +58,38 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit fixed top-10 inset-x-0 mx-auto z-[5000] items-center justify-center",
+          // change rounded-full to rounded-lg
+          // remove dark:border-white/[0.2] dark:bg-black bg-white border-transparent
+          // change  pr-2 pl-8 py-2 to px-10 py-5
+          "flex max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto px-6 py-3 md:px-10 md:py-5 rounded-full border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-center space-x-2 md:space-x-4",
           className
         )}
+        style={{
+          backdropFilter: "blur(16px) saturate(180%)",
+          backgroundColor: "rgba(17, 25, 40, 0.15)",
+          borderRadius: "100px",
+          border: "1px solid rgba(255, 255, 255, 0.125)",
+        }}
       >
-        <div className="flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/80 px-2 py-1.5 shadow-lg shadow-black/10 backdrop-blur-md dark:border-white/10 dark:bg-black/50">
-          {/* Nav items container */}
-          <div className="flex items-center gap-1">
-            {navItems.map((navItem, idx: number) => (
-              <a
-                key={`link-${idx}`}
-                href={navItem.link}
-                className={cn(
-                  "relative flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium text-neutral-600 transition-colors hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-300 dark:hover:bg-white/10 dark:hover:text-white"
-                )}
-              >
-                <span className="block sm:hidden">{navItem.icon}</span>
-                <span className="hidden sm:block">{navItem.name}</span>
-              </a>
-            ))}
-          </div>
-        </div>
+        {navItems.map((navItem: any, idx: number) => (
+          <Link
+            key={`link=${idx}`}
+            href={navItem.link}
+            className={cn(
+              "relative dark:text-neutral-50 items-center  flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+            )}
+          >
+            <span className="block sm:hidden">{navItem.icon}</span>
+            {/* add !cursor-pointer */}
+            {/* remove hidden sm:block for the mobile responsive */}
+            <span className=" text-sm !cursor-pointer">{navItem.name}</span>
+          </Link>
+        ))}
+        {/* remove this login btn */}
+        {/* <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
+          <span>Login</span>
+          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
+        </button> */}
       </motion.div>
     </AnimatePresence>
   );
