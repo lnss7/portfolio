@@ -1,5 +1,4 @@
 export const navItems = [
-  { name: "Sobre", link: "#about" },
   { name: "Projetos", link: "#projects" },
   { name: "Tecnologias", link: "#technologies" },
   { name: "Experiência", link: "#experience" },
@@ -92,7 +91,7 @@ export const projects = [
     title: "Stranger Things Experience",
     des: "Landing page imersiva e interativa inspirada na série. Foco em UI/UX, utilizando Parallax e Smooth Scroll para uma navegação fluida.",
     img: "/p3.svg",
-    iconLists: ["/javascript.svg", "/css.svg", "/html5.svg", "/gsap.svg"],
+    iconLists: ["/JavaScript.svg", "/css.svg", "/html5.svg", "/gsap.svg"],
     link: "/ui.aiimg.com",
   },
 ];
@@ -105,7 +104,7 @@ export const technologies = [
   { id: 5, name: "Material UI", img: "/MaterialUI.svg" },
   { id: 6, name: "Java", img: "/java.svg" },
   { id: 7, name: "GSAP", img: "/gsap.svg" },
-  { id: 8, name: "JavaScript", img: "/javascript.svg" },
+  { id: 8, name: "JavaScript", img: "/JavaScript.svg" },
   { id: 9, name: "HTML5", img: "/html5.svg" },
   { id: 10, name: "CSS", img: "/css.svg" },
   { id: 11, name: "Python", img: "/python.svg" },
