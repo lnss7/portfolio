@@ -49,7 +49,7 @@ const Hero = () => {
             Opa, me chamo Lucas Simão! Sou apaixonado por front-end, design interativo e micro SaaS, transformando lógica em interfaces de alto impacto.
           </p>
 
-          <a href="#about">
+          <a href="#projects">
             <MagicButton
               title="Ver projetos"
               icon={<FaLocationArrow />}
