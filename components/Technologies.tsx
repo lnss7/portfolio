@@ -9,7 +9,7 @@ const Technologies = () => {
   return (
     <div className="py-20 w-full" id="technologies">
       <h1 className="heading">
-        My <span className="text-purple">Tech Stack</span>
+        Minha <span className="text-purple">Tech Stack</span>
       </h1>
 
       <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 max-w-7xl mx-auto mt-10 p-4">

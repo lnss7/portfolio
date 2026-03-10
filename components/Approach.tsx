@@ -8,12 +8,12 @@ const Approach = () => {
     return (
         <section className="w-full py-5">
             <h1 className="heading">
-                My <span className="text-purple">Approach</span>
+                O que me <span className="text-purple">Move</span>
             </h1>
             <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
-                <Card title="Estrategy and verification"
+                <Card title="Curiosidade 'Under the Hood'"
                     icon={<AceternityIcon order="Phase 1" />}
-                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+                    description="Mais do que escrever código, eu gosto de entender a fundo como as ferramentas funcionam. Minha base na Engenharia de Software me faz focar na raiz do problema e na lógica antes de começar a digitar."
                     >
                     <CanvasRevealEffect
                         animationSpeed={5.1}
@@ -21,9 +21,9 @@ const Approach = () => {
                     />
                 </Card>
 
-                <Card title="Developer is Lucas"
+                <Card title="Cabeça de Produto (Micro SaaS)"
                     icon={<AceternityIcon order="Phase 2"/>}
-                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+                    description="Não quero ser apenas um 'tirador de pedidos'. Gosto de construir pensando no usuário final, na escalabilidade e em como o software resolve uma dor real, aplicando a mentalidade de um criador de produtos."
                     >
                     <CanvasRevealEffect
                         animationSpeed={3}
@@ -36,9 +36,9 @@ const Approach = () => {
                     />
                 </Card>
 
-                <Card title="Lucas is Developer"
+                <Card title="Experiências que Marcam"
                     icon={<AceternityIcon order="Phase 3"/>}
-                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+                    description="Acredito que um código bem estruturado precisa de uma interface à altura. Dedico meu tempo para polir a UI/UX, aplicar design interativo e garantir que a navegação seja fluida, rápida e sem engasgos."
                     >
                     <CanvasRevealEffect
                         animationSpeed={3}

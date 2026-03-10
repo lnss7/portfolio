@@ -9,7 +9,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "Priorizo o trabalho em equipe, a agilidade e a comunicação transparente",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -19,7 +19,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Moro em Porto Alegre, RS, com flexibilidade para agarrar desafios remotos",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -29,8 +29,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "Minha stack técnica",
+    description: "Sempre buscando evoluir",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -39,7 +39,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Entusiasta de tecnologia, movido pela vontade de entender como as coisas funcionam.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -50,8 +50,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "Desenvolvendo soluções em saúde digital para o SUS através do PET-Saúde",
+    description: "O que estou construindo no momento",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -60,7 +60,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Buscando um dev para o seu time ou projeto?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -73,35 +73,27 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "Dashboard Operacional (AGES I) - Polícia Civil ",
+    des: "Dashboard desenvolvido em equipe para apoiar operações institucionais , com atuação principal no front-end utilizando filtros e modais.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["/next.svg", "/re.svg", "/ts.svg", "/python.svg", "/MaterialUI.svg"],
     link: "/ui.earth.com",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "FSW Barber - Sistema SaaS",
+    des: "Plataforma Full Stack para gestão de barbearias. Conta com agendamento em tempo real e autenticação segura via Google.",
     img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/next.svg", "/re.svg", "/ts.svg", "/tail.svg", "/postgresql.svg"],
     link: "/ui.yoom.com",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "Stranger Things Experience",
+    des: "Landing page imersiva e interativa inspirada na série. Foco em UI/UX, utilizando Parallax e Smooth Scroll para uma navegação fluida.",
     img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    iconLists: ["/javascript.svg", "/css.svg", "/html5.svg", "/gsap.svg"],
     link: "/ui.aiimg.com",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
   },
 ];
 
@@ -110,75 +102,42 @@ export const technologies = [
   { id: 2, name: "Next.js", img: "/next.svg" },
   { id: 3, name: "Tailwind CSS", img: "/tail.svg" },
   { id: 4, name: "TypeScript", img: "/ts.svg" },
-  { id: 5, name: "Three.js", img: "/three.svg" },
-  { id: 6, name: "Framer Motion", img: "/fm.svg" },
+  { id: 5, name: "Material UI", img: "/MaterialUI.svg" },
+  { id: 6, name: "Java", img: "/java.svg" },
   { id: 7, name: "GSAP", img: "/gsap.svg" },
-  { id: 8, name: "Docker", img: "/dock.svg" },
-  { id: 9, name: "Appwrite", img: "/app.svg" },
-  { id: 10, name: "Cloudinary", img: "/cloud.svg" },
-  { id: 11, name: "Hostinger", img: "/host.svg" },
-  { id: 12, name: "Stream", img: "/s.svg" },
-];
-
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
+  { id: 8, name: "JavaScript", img: "/javascript.svg" },
+  { id: 9, name: "HTML5", img: "/html5.svg" },
+  { id: 10, name: "CSS", img: "/css.svg" },
+  { id: 11, name: "Python", img: "/python.svg" },
+  { id: 12, name: "PostgreSQL", img: "/postgresql.svg" },
 ];
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Bolsista de Desenvolvimento - PET-Saúde",
+    desc: "Desenvolvimento de soluções tecnológicas em saúde digital para apoio ao SUS e gestão hospitalar, colaborando ativamente com uma equipe multidisciplinar.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Desenvolvedor Front-end - Projeto AGES I",
+    desc: "Atuei no desenvolvimento de um dashboard operacional para a Polícia Civil, focado na criação de interfaces com React.js, Material UI e aplicação de metodologias ágeis.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Certificações em IA & JavaScript",
+    desc: "Foco no aprendizado contínuo, contando com a trilha de JavaScript pela Apple Developer Academy e certificações da Microsoft em Fundamentos de IA, Visão Computacional e Machine Learning.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Engenharia de Software & Interesses",
+    desc: "Cursando o 5º semestre na PUCRS, com reconhecimento de Mérito Acadêmico (2025/1). Possuo forte interesse e dedico meus estudos nas áreas de desenvolvimento Front-end, ecossistema de Micro SaaS e design interativo.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -188,13 +147,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    href: "https://github.com/lnss7",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/instagram.svg",
+    href: "https://www.instagram.com/lucxs_ns/",
   },
   {
     id: 3,
     img: "/link.svg",
+    href: "https://www.linkedin.com/in/lucas-novelly-simao/",
   },
 ];

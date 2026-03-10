@@ -37,22 +37,22 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
+            ESTUDANTE DE ENGENHARIA DE SOFTWARE NA PUCRS
           </h2>
 
-          <TextGenerateEffect 
-          className="text-center text-[40px] md:text-5xl lg:text-6xl"
-          words="Crafting Dynamic Web Experiences with Next.js"
+          <TextGenerateEffect
+            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            words="Construindo soluções inovadoras e experiências imersivas"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-xl lg:text-2xl">
-            Opa, me chamo Lucas Simão, sou um desenvolvedor web apaixonado por criar experiências digitais incríveis!
+            Opa, me chamo Lucas Simão! Sou apaixonado por front-end, design interativo e micro SaaS, transformando lógica em interfaces de alto impacto.
           </p>
 
           <a href="#about">
             <MagicButton
-              title="show my work"
-              icon={<FaLocationArrow/>}
+              title="Ver projetos"
+              icon={<FaLocationArrow />}
               position="right"
             />
           </a>
