@@ -9,8 +9,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Meu Portfolio",
-  description: "Moderno e minimalista, este é o meu portfolio pessoal, onde apresento meus projetos e habilidades de forma clara e objetiva.",
+  title: "Lucas Simão | Desenvolvedor de Software",
+  description: "Portfólio de Lucas Simão. Descubra meus projetos em React, Next.js, UI/UX e desenvolvimento focado em criar experiências modernas e resolutivas.",
 };
 
 export default function RootLayout({

@@ -76,7 +76,7 @@ export const projects = [
     des: "Dashboard desenvolvido em equipe para apoiar operações institucionais , com atuação principal no front-end utilizando filtros e modais.",
     img: "/p1.svg",
     iconLists: ["/next.svg", "/re.svg", "/ts.svg", "/python.svg", "/MaterialUI.svg"],
-    link: "/ui.earth.com",
+    link: "https://tools.ages.pucrs.br/dashboard-operacional/frontend.git",
   },
   {
     id: 2,
@@ -84,7 +84,7 @@ export const projects = [
     des: "Plataforma Full Stack para gestão de barbearias. Conta com agendamento em tempo real e autenticação segura via Google.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/re.svg", "/ts.svg", "/tail.svg", "/postgresql.svg"],
-    link: "/ui.yoom.com",
+    link: "https://barber.lucasnovellysimao.com/",
   },
   {
     id: 3,
@@ -92,7 +92,7 @@ export const projects = [
     des: "Landing page imersiva e interativa inspirada na série. Foco em UI/UX, utilizando Parallax e Smooth Scroll para uma navegação fluida.",
     img: "/p3.svg",
     iconLists: ["/JavaScript.svg", "/css.svg", "/html5.svg", "/gsap.svg"],
-    link: "/ui.aiimg.com",
+    link: "https://lucasnovellysimao.com/stranger-things/",
   },
 ];
 
