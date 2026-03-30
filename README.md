@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Meu Portfólio Pessoal 🚀
 
-## Getting Started
+Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi desenvolvido para apresentar meus trabalhos, experiências e as tecnologias nas quais tenho me aprofundado como desenvolvedor de software.
 
-First, run the development server:
+## 💻 Sobre o Projeto
 
+Este portfólio foi construído com foco em **UI/UX imersiva**, utilizando animações interativas e renderização 3D no navegador para criar uma experiência única. 
+
+Aqui você encontrará detalhes sobre minha trajetória como estudante de Engenharia de Software na PUCRS, minhas certificações e meus projetos em destaque, como sistemas Full Stack e páginas interativas.
+
+### 🛠 Tecnologias e Ferramentas
+
+O projeto foi construído utilizando as seguintes tecnologias e bibliotecas principais:
+
+- **Framework**: [Next.js](https://nextjs.org/) (React.js)
+- **Linguagem**: [TypeScript](https://www.typescriptlang.org/)
+- **Estilização**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animações e Efeitos Visuais**: 
+  - [Framer Motion](https://www.framer.com/motion/)
+  - [GSAP](https://gsap.com/)
+  - [Lottie](https://airbnb.io/lottie/#/)
+- **Interações 3D**:
+  - [Three.js](https://threejs.org/)
+  - [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/) e [@react-three/drei](https://github.com/pmndrs/drei)
+  - [Three-globe](https://github.com/vasturiano/three-globe)
+- **Outros**: `next-themes` (para suporte a temas), `lucide-react` e `@tabler/icons-react` (ícones), Sentry (monitoramento).
+
+## 📂 Projetos em Destaque
+
+Alguns dos projetos listados no portfólio incluem:
+
+1. **Apple MacBook Pro** - Uma experiência web imersiva utilizando modelos 3D de alta fidelidade para apresentar o design do MacBook (com Three.js e GSAP). [Ver site](https://macbook.lucasnovellysimao.com/)
+2. **FSW Barber (Sistema SaaS)** - Plataforma Full Stack para gestão de barbearias, com agendamento em tempo real e autenticação via Google. [Ver site](https://barber.lucasnovellysimao.com/)
+3. **Stranger Things Experience** - Landing page interativa inspirada na série com foco em Parallax e Smooth Scroll. [Ver site](https://lucasnovellysimao.com/stranger-things/)
+4. **Dashboard Operacional (AGES I) - Polícia Civil** - Dashboard em React/Material UI para apoiar operações institucionais da Polícia Civil, com desenvolvimento focado no front-end ágil.
+
+## 🙋‍♂️ Sobre Mim
+
+Meu nome é **Lucas Novelly Simão**, moro em Porto Alegre, RS, e sou um entusiasta de tecnologia movido pela curiosidade de entender como as coisas funcionam. Atualmente cursando o 5º semestre de Engenharia de Software na PUCRS (com reconhecimento de Mérito Acadêmico - 2025/1). 
+
+Tenho experiência profissional com Front-end, metodologias ágeis e colaboração em equipes multidisciplinares (como no projeto AGES I e no programa PET-Saúde com inovação para o SUS). Dedico meus estudos a **desenvolvimento Front-end**, ecossistemas de **Micro SaaS**, de **Design Interativo** e **Inteligência Artificial**.
+
+## 🚀 Como rodar o projeto localmente
+
+Se quiser clonar ou testar o projeto localmente, siga os passos abaixo:
+
+1. Clone o repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/lnss7/portfolio.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Entre na pasta do projeto:
+```bash
+cd portfolio
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Instale as dependências:
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Execute o servidor de desenvolvimento:
+```bash
+npm run dev
+```
 
-## Learn More
+5. Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
 
-To learn more about Next.js, take a look at the following resources:
+## 📫 Contato
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Sinta-se à vontade para se conectar comigo ou enviar uma mensagem caso queira conversar sobre vagas, freelances, ou novas ideias de projetos!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **LinkedIn**: [Lucas Novelly Simão](https://www.linkedin.com/in/lucas-novelly-simao/)
+- **GitHub**: [@lnss7](https://github.com/lnss7)
+- **Instagram**: [@lucxs_ns](https://www.instagram.com/lucxs_ns/)
