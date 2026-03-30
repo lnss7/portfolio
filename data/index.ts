@@ -70,14 +70,15 @@ export const gridItems = [
 ];
 
 export const projects = [
-  {
+    {
     id: 1,
-    title: "Dashboard Operacional (AGES I) - Polícia Civil ",
-    des: "Dashboard desenvolvido em equipe para apoiar operações institucionais , com atuação principal no front-end utilizando filtros e modais.",
-    img: "/p1.svg",
-    iconLists: ["/next.svg", "/re.svg", "/ts.svg", "/python.svg", "/MaterialUI.svg"],
-    link: "https://tools.ages.pucrs.br/dashboard-operacional/frontend.git",
+    title: "Apple MacBook Pro",
+    des: "Este projeto é uma experiência web imersiva e interativa que utiliza modelos 3D de alta fidelidade para apresentar os detalhes e o design do MacBook.",
+    img: "/p4.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/three.svg", "/gsap.svg"],
+    link: "https://macbook.lucasnovellysimao.com/",
   },
+
   {
     id: 2,
     title: "FSW Barber - Sistema SaaS",
@@ -93,6 +94,14 @@ export const projects = [
     img: "/p3.svg",
     iconLists: ["/JavaScript.svg", "/css.svg", "/html5.svg", "/gsap.svg"],
     link: "https://lucasnovellysimao.com/stranger-things/",
+  },  
+  {
+    id: 4,
+    title: "Dashboard Operacional (AGES I) - Polícia Civil ",
+    des: "Dashboard desenvolvido em equipe para apoiar operações institucionais , com atuação principal no front-end utilizando filtros e modais.",
+    img: "/p1.svg",
+    iconLists: ["/next.svg", "/re.svg", "/ts.svg", "/python.svg", "/MaterialUI.svg"],
+    link: "https://tools.ages.pucrs.br/dashboard-operacional/frontend.git",
   },
 ];
 
