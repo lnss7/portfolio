@@ -1,5 +1,7 @@
+"use client";
+
 import React from 'react'
-import { FaLocationArrow } from 'react-icons/fa'
+import { FaDownload, FaLocationArrow } from 'react-icons/fa'
 import MagicButton from './ui/MagicButton'
 import Image from 'next/image'
 import { socialMedia } from '@/data'
@@ -12,13 +14,33 @@ const Footer = () => {
                     Buscando um dev para o <span className='text-purple'>seu</span> time ou próximo projeto?
                 </h1>
                 <p className='text-white-200 md:mt-10 my-5 text-center '>Seja para integrar a sua equipe ou para dar vida a um novo Micro SaaS, minha caixa de entrada está aberta.</p>
-                <a href='mailto:novellysimaolucas@gmail.com'>
-                    <MagicButton
-                        title="Fale Comigo!"
-                        icon={<FaLocationArrow />}
-                        position="right"
-                    />
-                </a>
+                <div className='flex flex-col md:flex-row items-center justify-center gap-4 w-full'>
+                    <a href='mailto:novellysimaolucas@gmail.com' className="w-full sm:w-auto">
+                        <MagicButton
+                            title="Fale Comigo!"
+                            icon={<FaLocationArrow />}
+                            position="right"
+                        />
+                    </a>
+                    <div className="w-full sm:w-auto">
+                        <MagicButton
+                            title="Download CV"
+                            icon={<FaDownload />}
+                            position="right"
+                            handleClick={() => {
+                                const iframe = document.createElement("iframe");
+                                iframe.style.display = "none";
+                                iframe.src = "https://drive.google.com/uc?export=download&id=1aWGBOrRrml84Z4LtztgfIGd9_Od90HwJ";
+                                document.body.appendChild(iframe);
+                                setTimeout(() => {
+                                    if (document.body.contains(iframe)) {
+                                        document.body.removeChild(iframe);
+                                    }
+                                }, 10000);
+                            }}
+                        />
+                    </div>
+                </div>
             </div>
             <div className='flex mt-16 md:flex-row flex-col justify-between items-center gap-y-8 md:gap-y-0'>
                 <p className='md:text-base text-sm md:font-normal font-light md:order-1 order-2'>Copyright © 2025 Lucas Novelly Simao</p>
